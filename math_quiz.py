@@ -23,6 +23,10 @@ for i in range(questions):
   else:
     print("Incorrect!")
 
+  if i < questions - 1:
+    print("Next question coming in 10 seconds...\n")
+    time.sleep(10)
+
 print("Quiz complete!")
 print("You got " + str(score) + " questions correct!")
 print("You got " + str((score / 4) * 100) + "%.")
